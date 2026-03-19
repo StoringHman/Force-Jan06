@@ -28,28 +28,25 @@ namespace RobloxStudioModManager
 
         private void promptNewRelease(string releaseTag)
         {
-            #if !DEBUG
-            Enabled = false;
+
 
             DialogResult result = MessageBox.Show
             (
-                "There's a new version of the mod manager available!\n" +
-                "This version is likely broken or no longer supported.\n" +
-                "Would you like to check it out?",
+                "IMPORTANT!!\n" +
+                "You WILL get the out of date error, run the PatchStudio.py script.\n" +
+                "\nYou cant launch studio with this! Force reinstallation cannot be turned off!",
 
-                "Update available!",
-                MessageBoxButtons.YesNo,
+                "Forced-Jan06",
+                MessageBoxButtons.OK,
                 MessageBoxIcon.Information
             );
-
-            if (result == DialogResult.Yes)
+            
+           /* if (result == DialogResult.Yes)
             {
-                Process.Start($"https://www.github.com/{Program.RepoOwner}/{Program.RepoName}/releases/tag/{releaseTag}");
+                Process.Start($"https://github.com/MaximumADHD/Roblox-Studio-Mod-Manager/issues/239#issuecomment-3868394613");
                 Application.Exit();
-            }
+            }*/ //removed due to patchstudio.py creation making manual guide useless
 
-            Enabled = true;
-            #endif
         }
 
         private async void Launcher_Load(object sender, EventArgs e)
@@ -66,29 +63,11 @@ namespace RobloxStudioModManager
             
             using (var http = new WebClient())
             {
-                var get = http.DownloadStringTaskAsync(Program.BaseConfigUrl + "LatestReleaseTag.txt");
-
-                await get.ContinueWith(task =>
-                {
-                    if (task.IsFaulted)
-                    {
-                        MessageBox.Show("Could not fetch latest release tag!\nYou may not have an internet connection.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
-
-                    if (!task.IsCompleted)
-                        return;
-
-                    string releaseTag = task.Result.Trim();
-
-                    if (releaseTag == Program.ReleaseTag)
-                        return;
-
-                    Invoke(new Action<string>(promptNewRelease), releaseTag);
-                });
+                Invoke(new Action<string>(promptNewRelease), "vaka");
             }
 
             // Grab the version currently being targeted.
+            Program.State.TargetVersion = "0.713.0.7130910";
             string targetId = Program.State.TargetVersion;
             const string latest = "(Use Latest)";
 

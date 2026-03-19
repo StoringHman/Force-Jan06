@@ -71,6 +71,7 @@
             this.manageMods.Text = "Open Mod Folder";
             this.manageMods.UseVisualStyleBackColor = true;
             this.manageMods.Click += new System.EventHandler(this.manageMods_Click);
+            this.manageMods.Enabled = false;
             // 
             // forceRebuild
             // 
@@ -84,6 +85,8 @@
             this.forceRebuild.TabIndex = 12;
             this.forceRebuild.Text = "Force Reinstallation";
             this.forceRebuild.UseVisualStyleBackColor = true;
+            this.forceRebuild.Checked = true;
+            this.forceRebuild.Enabled = false;
             // 
             // openFlagEditor
             // 
@@ -98,6 +101,7 @@
             this.openFlagEditor.Text = "Edit Fast Flags";
             this.openFlagEditor.UseVisualStyleBackColor = true;
             this.openFlagEditor.Click += new System.EventHandler(this.editFVariables_Click);
+            this.openFlagEditor.Enabled = false;
             // 
             // openStudioDirectory
             // 
@@ -149,6 +153,8 @@
             this.targetVersion.Size = new System.Drawing.Size(152, 21);
             this.targetVersion.TabIndex = 18;
             this.targetVersion.SelectedIndexChanged += new System.EventHandler(this.targetVersion_SelectedIndexChanged);
+            this.targetVersion.Enabled = false;
+            this.targetVersion.Transparent = true;
             // 
             // releaseTag
             // 

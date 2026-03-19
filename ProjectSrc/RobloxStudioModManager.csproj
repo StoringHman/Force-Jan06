@@ -178,7 +178,6 @@
     <Compile Include="Utility\Package.cs" />
     <Compile Include="Utility\PatternScanner.cs" />
     <Compile Include="Utility\RawFFlagData.cs" />
-    <Compile Include="Utility\RobloxInternal.cs" />
     <Compile Include="Utility\StudioFFlagDumper.cs" />
     <Compile Include="Utility\SystemEvent.cs" />
     <Compile Include="Bootstrapper\*.cs" />

@@ -1,13 +1,24 @@
 <hr/>
 
 <p align="center">
-  <img width="256" height="256" src="https://raw.githubusercontent.com/MaximumADHD/Roblox-Studio-Mod-Manager/master/ProjectSrc/Resources/Logo.png"><h1 align=center>Roblox Studio Mod Manager<br/>(By: MaximumADHD)</h1>
+  <img width="256" height="256" src="https://raw.githubusercontent.com/StoringHman/Force-Jan06/master/ProjectSrc/Resources/Logo.png"><h1 align=center>Force-Jan06 [RSMM Fork]<br/>(RSMM By: MaximumADHD)</h1>
   
 </p>
 
 <hr/>
 
+# stuff
+hi so basically this is just the latest studio mod manager but the compiled exe now targets my own roblox client tracker repo that tells studio mod manager the string for the latest build version is the jan06 one, the actual repo has nothing changed aside from visual stuff and forcing the target version to 0.713. you can do this yourself by making your own client tracker repo and editing it, or just downloading the compiled exe from releases. YOU WILL STILL NEED TO APPLY OLD FIXES TO THE STUDIO EXE WHEN COMPELTE! THIS INCLUDES FFLAGS!
+
+IF YOU DO WANT TO COMPILE SOMETHING LIKE THIS YOURSELF:
+you will need the source of the latest rsmm repo and roblox-deploy-history repo
+you will need a fork of roblox-client-tracker on github
+
+(roblox-deploy-history is used in compiling rsmm)
+i personally compiled with visual studio
+
 # What is this?
+
 
 The **Roblox Studio Mod Manager** is an open-source alternative bootstrapper for Roblox Studio. It is intended for power users who want to make experimental changes/tweaks to Roblox Studio without those changes being overwritten, and experiment with new features of Roblox Studio before the general public.
 
