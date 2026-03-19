@@ -128,7 +128,7 @@
             this.targetVersionLabel.Name = "targetVersionLabel";
             this.targetVersionLabel.Size = new System.Drawing.Size(83, 15);
             this.targetVersionLabel.TabIndex = 17;
-            this.targetVersionLabel.Text = "Target Version:";
+            this.targetVersionLabel.Text = "Target Version is already set!";
             // 
             // title
             // 
@@ -137,7 +137,7 @@
             this.title.Name = "title";
             this.title.Size = new System.Drawing.Size(176, 88);
             this.title.TabIndex = 20;
-            this.title.Text = "Roblox Studio\r\nMod Manager";
+            this.title.Text = "RSMM\r\nFJ06";
             this.title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // targetVersion
@@ -150,18 +150,17 @@
             "(Use Latest)"});
             this.targetVersion.Location = new System.Drawing.Point(174, 142);
             this.targetVersion.Name = "targetVersion";
-            this.targetVersion.Size = new System.Drawing.Size(152, 21);
+            this.targetVersion.Size = new System.Drawing.Size(0, 0);
             this.targetVersion.TabIndex = 18;
             this.targetVersion.SelectedIndexChanged += new System.EventHandler(this.targetVersion_SelectedIndexChanged);
             this.targetVersion.Enabled = false;
-            this.targetVersion.Transparent = true;
             // 
             // releaseTag
             // 
             this.releaseTag.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.releaseTag.AutoSize = true;
             this.releaseTag.ForeColor = System.Drawing.Color.DarkGray;
-            this.releaseTag.Location = new System.Drawing.Point(266, 5);
+            this.releaseTag.Location = new System.Drawing.Point(222, 5);
             this.releaseTag.Name = "releaseTag";
             this.releaseTag.Size = new System.Drawing.Size(0, 13);
             this.releaseTag.TabIndex = 23;
