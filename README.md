@@ -10,9 +10,12 @@
 # how to use
 Very simple, there are two use cases.
 If you want this for the old studio UI (which I am assuming most people who use this are using it for), you will need the latest .exe file from releases and (optionally, as you can do it manually) the .py file for patching it.
+
 If you want this just to use old studio for some reason I guess, you will need to follow the same steps but inside the patcher UI disable FFlags.
 
-If you want to do this manually without the .py file, first install the studio build and then add all FFlags into %localappdata%/Roblox Studio/ClientSettings/ClientAppSettings.json
+
+If you want to do this manually without the .py file, first install the studio build and then add all FFlags into %localappdata%/Roblox Studio/ClientSettings/ClientAppSettings.json.
+
 Then for manually patching the file to remove the out of date reinstall error, see https://github.com/MaximumADHD/Roblox-Studio-Mod-Manager/issues/239#issuecomment-3868394613
 
 # stuff
