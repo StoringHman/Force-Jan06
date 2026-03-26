@@ -415,15 +415,26 @@ namespace RobloxStudioModManager
 
             if (openStudioDirectory.Checked)
             {
-                Process.Start(studioRoot);
+                //Process.Start(studioRoot);
             }
             else
             {
                 string currentVersion = versionRegistry.VersionGuid;
                 versionRegistry.LastExecutedVersion = currentVersion;
 
-                Process.Start(robloxStudioInfo);
+                //Process.Start(robloxStudioInfo);
             }
+
+            DialogResult result = MessageBox.Show
+            (
+                "Studio Installed.\n" +
+                "Please apply patches + fflags using the PatchStudio.py file.\n" +
+                "\nYou can launch studio from the PatchStudio.py file or by running RobloxStudioBeta.exe from %localappdata%/Roblox Studio/",
+
+                "Forced-Jan06",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
 
             Program.SaveState();
             Environment.Exit(Environment.ExitCode);
