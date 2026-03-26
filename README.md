@@ -1,11 +1,19 @@
 <hr/>
 
 <p align="center">
-  <img width="256" height="256" src="https://raw.githubusercontent.com/StoringHman/Force-Jan06/master/ProjectSrc/Resources/Logo.png"><h1 align=center>Force-Jan06 [RSMM Fork]<br/>(RSMM By: MaximumADHD)</h1>
+  <img width="256" height="256" src="https://raw.githubusercontent.com/StoringHman/Force-Jan06/master/ProjectSrc/Resources/Logo.png"><h1 align=center>Force-Jan06<br/>(RSMM By: MaximumADHD)</h1>
   
 </p>
 
 <hr/>
+
+# how to use
+Very simple, there are two use cases.
+If you want this for the old studio UI (which I am assuming most people who use this are using it for), you will need the latest .exe file from releases and (optionally, as you can do it manually) the .py file for patching it.
+If you want this just to use old studio for some reason I guess, you will need to follow the same steps but inside the patcher UI disable FFlags.
+
+If you want to do this manually without the .py file, first install the studio build and then add all FFlags into %localappdata%/Roblox Studio/ClientSettings/ClientAppSettings.json
+Then for manually patching the file to remove the out of date reinstall error, see https://github.com/MaximumADHD/Roblox-Studio-Mod-Manager/issues/239#issuecomment-3868394613
 
 # stuff
 hi so basically this is just the latest studio mod manager but the compiled exe now targets my own roblox client tracker repo that tells studio mod manager the string for the latest build version is the jan06 one, the actual repo has nothing changed aside from visual stuff and forcing the target version to 0.713. you can do this yourself by making your own client tracker repo and editing it, or just downloading the compiled exe from releases. YOU WILL STILL NEED TO APPLY OLD FIXES TO THE STUDIO EXE WHEN COMPELTE! THIS INCLUDES FFLAGS!
