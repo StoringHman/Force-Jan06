@@ -60,14 +60,14 @@ namespace RobloxStudioModManager
             // Register the base "Roblox.Place" open protocol.
             RegistryKey classes = Registry.CurrentUser.GetSubKey("SOFTWARE", "Classes");
 
-            RegistryKey robloxPlace = classes.GetSubKey("Roblox.Place");
-            robloxPlace.SetValue(_, "Roblox Place");
+            //RegistryKey robloxPlace = classes.GetSubKey("Roblox.Place");
+            //robloxPlace.SetValue(_, "Roblox Place");
 
-            RegistryKey robloxPlaceCmd = robloxPlace.GetSubKey("shell", "open", "command");
-            robloxPlaceCmd.SetValue(_, $"\"{modManagerPath}\" -task EditFile -localPlaceFile \"%1\"");
+            //RegistryKey robloxPlaceCmd = robloxPlace.GetSubKey("shell", "open", "command");
+            //robloxPlaceCmd.SetValue(_, $"\"{modManagerPath}\" -task EditFile -localPlaceFile \"%1\"");
 
             // Pass the .rbxl and .rbxlx file formats to Roblox.Place
-            RegistryKey[] robloxLevelPass =
+            /**RegistryKey[] robloxLevelPass =
             {
                 classes.GetSubKey(".rbxl"),
                 classes.GetSubKey(".rbxlx")
@@ -107,7 +107,7 @@ namespace RobloxStudioModManager
             {
                 RegistryKey defaultIcon = GetSubKey(app, "DefaultIcon");
                 defaultIcon.SetValue(_, $"{modManagerPath},0");
-            }
+            }*/
         }
 
         static void ConvertLegacy(RegistryKey regKey, JObject node)
