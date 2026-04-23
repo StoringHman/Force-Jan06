@@ -7,6 +7,9 @@
 
 <hr/>
 
+# notice
+I strongly recommend AGAINST using this. Recent flag toggles on Roblox's side has caused many issues with using this build of studio. In theory, it would be possible to fix these issues (such as not being able to move in playtesting after opening the escape menu) by finding these flags but I won't be going through trying to find it. If you DO find them however, please make an issue and I will add them to the default list on the patcher.
+
 # how to use
 Very simple, there are two use cases.
 If you want this for the old studio UI (which I am assuming most people who use this are using it for), you will need the latest .exe file from releases and (optionally, as you can do it manually) the .py file for patching it.
