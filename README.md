@@ -8,7 +8,7 @@
 <hr/>
 
 # notice
-I strongly recommend AGAINST using this. Recent flag toggles on Roblox's side has caused many issues with using this build of studio. In theory, it would be possible to fix these issues (such as not being able to move in playtesting after opening the escape menu) by finding these flags but I won't be going through trying to find it. If you DO find them however, please make an issue and I will add them to the default list on the patcher.
+You are now no longer able to use this version of Studio. Trying to connect to published games will throw an error.
 
 # how to use
 Very simple, there are two use cases.
